@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyProgressBar</string>
+    <string name="isShow">显示隐藏进度条</string>
+    <string name="load">模拟下载</string>
+</resources>

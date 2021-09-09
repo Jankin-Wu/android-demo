@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyEditText</string>
+    <string name="edit_text">请输入用户名</string>
+    <string name="btn_text">获取用户</string>
+</resources>

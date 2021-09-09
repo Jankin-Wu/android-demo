@@ -1,3 +1,8 @@
 include ':app', ':mybutton'
 rootProject.name='test'
-implementation 'com.google.android.material:material:1.2.0'
+
+include ':myedittext'
+include ':myimageview'
+include ':app'
+include ':myprogressbar'
+include ':mynotification'
