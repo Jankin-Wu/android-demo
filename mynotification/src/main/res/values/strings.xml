@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MyNotification</string>
     <string name="sendNotification">发出通知</string>
+    <string name="cancelNotification">取消通知</string>
 </resources>
