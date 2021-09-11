@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * 每次点击进度条加10
+     * @param view
+     */
     public void load(View view) {
         int progress = progressBar2.getProgress();
         progress += 10;
