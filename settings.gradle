@@ -8,3 +8,4 @@ include ':myprogressbar'
 include ':mynotification'
 
 include ':mytoolbar'
+include ':myalertdialog'

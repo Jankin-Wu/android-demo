@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyAlertDialog</string>
+    <string name="show_dialog">显示对话框</string>
+    <string name="dialog_image">对话框图片</string>
+    <string name="dialog_text">天气很好</string>
+</resources>
