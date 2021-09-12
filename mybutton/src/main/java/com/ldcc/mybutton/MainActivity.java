@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "wwg";
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
