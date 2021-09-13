@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
                 .build();
-
     }
 
     private Bitmap drawableToBitamp(Drawable drawable)
