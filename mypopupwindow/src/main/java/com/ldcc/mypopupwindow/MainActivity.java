@@ -37,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
 //        popupWindow.showAsDropDown(view, view.getWidth(), -view.getHeight());
         popupWindow.showAsDropDown(view);
 
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
         btn1.setOnClickListener(view2 -> {Log.e(TAG, "onClick: 你是住在上海吗");
         popupWindow.dismiss();});
 

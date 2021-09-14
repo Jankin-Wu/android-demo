@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyGridLayout</string>
+    <string name="btn_1">第一个</string>
+    <string name="btn_2">第二个</string>
+    <string name="btn_3">第三个</string>
+    <string name="btn_4">第四个</string>
+</resources>
