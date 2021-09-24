@@ -46,10 +46,14 @@ public class MyAdapter extends BaseAdapter {
             viewHolder = new ViewHolder();
             view = LayoutInflater.from(context).inflate(R.layout.list_item, viewGroup, false);
             viewHolder.textView = view.findViewById(R.id.tv);
+            view.setTag(viewHolder);
+        }else {
+            viewHolder = (ViewHolder) view.getTag();
         }
         // 比较耗时的方法
-        TextView textView = view.findViewById(R.id.tv);
-        textView.setText(data.get(i).getName());
+//        TextView textView = view.findViewById(R.id.tv);
+//        textView.setText(data.get(i).getName());
+        viewHolder.textView.setText(data.get(i).getName());
         Log.e("test", "getView：" + i);
         return view;
     }
