@@ -13,7 +13,7 @@ import org.w3c.dom.Text;
 
 import java.util.List;
 
-public class MyAdapter extends BaseAdapter {
+public class        MyAdapter extends BaseAdapter {
 
     private List<Bean> data;
     private Context context;
