@@ -38,9 +38,11 @@ public class MainActivity extends AppCompatActivity {
 //        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
 //        recyclerView.setLayoutManager(linearLayoutManager);
 
+        // 网格视图
 //        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
 //        recyclerView.setLayoutManager(gridLayoutManager);
 
+        // 瀑布流视图
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(3,
                 StaggeredGridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(staggeredGridLayoutManager);
