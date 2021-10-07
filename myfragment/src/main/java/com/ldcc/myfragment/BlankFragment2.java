@@ -10,7 +10,7 @@
 
  import androidx.fragment.app.Fragment;
 
- public class BlankFragment1 extends Fragment {
+ public class BlankFragment2 extends Fragment {
 
 
     private View root;
