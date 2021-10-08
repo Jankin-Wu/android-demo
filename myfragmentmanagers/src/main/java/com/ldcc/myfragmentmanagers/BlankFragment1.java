@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.ldcc.myfragmentmanagers.service.IFragmentCallBack;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link BlankFragment1#newInstance} factory method to
@@ -28,6 +30,11 @@ public class BlankFragment1 extends Fragment {
 
     public BlankFragment1() {
         // Required empty public constructor
+    }
+
+    private IFragmentCallBack fragmentCallBack;
+    public void setFragmentCallBack(IFragmentCallBack callBack) {
+        fragmentCallBack = callBack;
     }
 
     /**

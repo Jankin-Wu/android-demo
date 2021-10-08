@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 bundle.putString("message", "我喜欢学 Android");
                 BlankFragment1 bf = new BlankFragment1();
                 bf.setArguments(bundle);
+
                 replaceFragment(bf);
                 break;
             case R.id.btn2:
