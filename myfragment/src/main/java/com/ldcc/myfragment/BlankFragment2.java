@@ -25,16 +25,14 @@
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        if (root == null) {
-            root = inflater.inflate(R.layout.fragment_blank1, container, false);
-        }
+        root = inflater.inflate(R.layout.fragment_blank1, container, false);
         textView = root.findViewById(R.id.tv);
         button = root.findViewById(R.id.btn);
         button.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
-                textView.setText("Hello World!");
+                textView.setText("Hello Worldzhandi");
             }
         });
         return root;
