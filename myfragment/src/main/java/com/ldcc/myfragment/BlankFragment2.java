@@ -1,19 +1,16 @@
  package com.ldcc.myfragment;
 
-import android.annotation.SuppressLint;
-import android.os.Bundle;
+ import android.annotation.SuppressLint;
+ import android.os.Bundle;
+ import android.view.LayoutInflater;
+ import android.view.View;
+ import android.view.ViewGroup;
+ import android.widget.Button;
+ import android.widget.TextView;
 
-import androidx.fragment.app.Fragment;
+ import androidx.fragment.app.Fragment;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
- public class BlankFragment1 extends Fragment {
+ public class BlankFragment2 extends Fragment {
 
 
     private View root;
