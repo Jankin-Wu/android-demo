@@ -9,6 +9,9 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import com.ldcc.myfragmentmanagers.service.IFragmentCallBack;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -31,6 +34,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 bundle.putString("message", "我喜欢学 Android");
                 BlankFragment1 bf = new BlankFragment1();
                 bf.setArguments(bundle);
+                bf.setFragmentCallBack(new IFragmentCallBack() {
+                    @Override
+                    public void sendMsgToActivity(String msg) {
+                        Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public String getMsgFromActivity(String msg) {
+                        return "Hello, I am from activity.";
+                    }
+                });
                 replaceFragment(bf);
                 break;
             case R.id.btn2:
