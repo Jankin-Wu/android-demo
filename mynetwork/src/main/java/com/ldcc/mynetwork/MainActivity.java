@@ -3,13 +3,19 @@ package com.ldcc.mynetwork;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
+import java.io.IOException;
+
+import okhttp3.Call;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String TAG = "test";
     private OkHttpClient okHttpClient;
 
     @Override
@@ -20,7 +26,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void getSync(View view) {
-        Request request = new Request.Builder().url("https://www.httpbin.org/get?a=1&b=2").build();
+        new Thread(){
+            @Override
+            public void run() {
+                Request request = new Request.Builder().url("https://www.httpbin.org/get?a=1&b=2").build();
+                // 请求的 Call 对象
+                Call call = okHttpClient.newCall(request);
+                try {
+                    Response response = call.execute();
+                    Log.e(TAG, "getSync: " + response.body().string());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }.start();
     }
 
     public void getAsync(View view) {
