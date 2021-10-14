@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyNetwork</string>
+    <string name="get_sync">Get 同步请求</string>
+    <string name="get_async">Get 异步请求</string>
+    <string name="post_sync">post 同步请求</string>
+    <string name="post_async">post 异步请求</string>
+</resources>
